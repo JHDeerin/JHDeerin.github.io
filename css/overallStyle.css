@@ -1,0 +1,16 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    color: rgb(255, 230, 204);
+    min-width: 575px;
+    min-height: 600px;
+    margin: 0;}
+
+a{
+    text-decoration: none;
+    color: rgb(179, 54, 125);
+}
+a:hover{
+    color: rgb(179, 54, 125);
+    text-decoration: underline;
+}
