@@ -22,11 +22,3 @@ body {
 .header h1 {
     font-size: 375%;
 }
-.header a{
-    text-decoration: none;
-    color: rgb(179, 54, 125);
-}
-.header a:hover{
-    color: rgb(179, 54, 125);
-    text-decoration: underline;
-}

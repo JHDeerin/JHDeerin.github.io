@@ -16,7 +16,7 @@ ul.nav{
 }
 li.navlink {
     display: inline;
-    overflow: hidden;
+    overflow: visible;
 }
 li.navlink a {
     height: 100%;
@@ -41,6 +41,21 @@ li.navlink a:active {
 }
 li.navlink a#currentPage {
     background-color: rgb(0, 0, 0);
+}
+li.navlink a#logo {
+    float: right;
+
+    position: relative;
+    bottom: 10px;
+    margin: 5px 0px;
+
+    color: rgb(64, 64, 64);
+}
+li.navlink a#logo:hover {
+    color: rgb(179, 54, 125);
+}
+li.navlink a#logo:active {
+    color: rgb(247, 165, 14);
 }
 /*li.navlink a#right-nav{
     border-right: 2px solid rgb(255, 230, 204);
