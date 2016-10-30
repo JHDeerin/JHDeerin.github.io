@@ -19,9 +19,9 @@ li.navlink {
     overflow: hidden;
 }
 li.navlink a {
+    height: 100%;
     position: relative;
     bottom: -10px;
-    height: 100%;
     margin: 0;
     padding: 15px;
     text-align: center;

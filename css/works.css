@@ -1,0 +1,59 @@
+body {
+    background-image: url("../images/works_background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0px auto;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    bottom: -50px;
+    left: 10px;
+
+    font-family: 'Droid Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 3em;
+}
+.header h1 {
+    font-size: 375%;
+}
+
+.works {
+    position: relative;
+    bottom: -50px;
+    width: 800px;
+    height: auto;
+    margin: 0px auto;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.works hr{
+    border: 0;
+    margin: 5px auto;
+    height: 2px;
+    width: 90%;
+    background-image: linear-gradient(to right, rgba(50, 50, 50, 0.1), rgba(255, 230, 204, 1),rgba(50, 50, 50, 0.1));
+}
+
+.project {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0px auto;
+
+    text-align: center;
+}
+.project th{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.project td{
+    text-align: center;
+}
