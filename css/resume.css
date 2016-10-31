@@ -26,3 +26,7 @@ body {
     width: 600px;
     height: 800px;
 }
+
+#biolink {
+    text-shadow: 0px 0px 4px black;
+}
