@@ -71,3 +71,25 @@ body {
     top: -35px;
     z-index: 5;
 }
+
+#mission {
+    position: relative;
+    bottom: -15px;
+
+    display: inline-block;
+    width: 275px;
+    height: 160px;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+
+    border: solid 2px rgb(255, 230, 204);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#signed {
+    height: 64px;
+    width: 172px;
+    margin: 0px;
+    float: right;
+}
