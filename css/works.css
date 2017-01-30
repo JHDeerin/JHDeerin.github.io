@@ -76,3 +76,7 @@ body {
 .project img{
     border: solid 2px rgb(255, 230, 204);
 }
+
+.iframe {
+    overflow: hidden;
+}
