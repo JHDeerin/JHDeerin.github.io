@@ -9,6 +9,7 @@ body {
 a{
     text-decoration: none;
     color: rgb(179, 54, 125);
+    transtion: ease-out color 0.15s;
 }
 a:hover{
     color: rgb(179, 54, 125);
