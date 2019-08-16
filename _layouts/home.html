@@ -12,14 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300|Droid+Sans:300" rel="stylesheet">
     </head>
     <body>
-        <ul class="nav">
-            <li class="navlink"><a id="currentPage" href="index.html">HOME</a></li>
-            <li class="navlink"><a href="bio.html">BIO</a></li>
-            <li class="navlink"><a href="resume.html">RESUME</a></li>
-            <li class="navlink"><a href="works.html">SAMPLE WORKS</a></li>
-            <li class="navlink"><a href="contact.html">CONTACT</a></li>
-            <li class="navlink"><a id="logo" href="index.html">//jake.deerin</a></li>
-        </ul>
+        {% include primaryNavigation.html %}
         {{ content }}
     </body>
 </html>

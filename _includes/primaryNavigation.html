@@ -1,0 +1,6 @@
+<ul class="nav">
+    {% for link in site.data.navigation %}
+    <li class="navlink"><a {% if page.url == link.url %} id="currentPage" {% endif %} href="{{ link.url }}">{{ link.title | upcase }}</a></li>
+    {% endfor %}
+    <li class="navlink"><a id="logo" href="index.html">//jake.deerin</a></li>
+</ul>
