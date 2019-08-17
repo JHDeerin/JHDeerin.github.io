@@ -11,78 +11,12 @@ googleFontUrl: 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300|Dro
 <div class="works">
     <p>Here are just a few of the more recent things I've been up to:</p>
     <hr />
-    <div class="project">
-        <table>
-            <tr>
-                <th>Bit.Spike</th>
-            </tr>
-            <tr>
-                <td><a href="http://vgdev.gtorg.gatech.edu/game/bit-spike/"><img src="images/project_bitspike.png"></a></td>
-            </tr>
-            <tr>
-                <td class="status">Status:
-                    <!--<span class="inprogress">In-Progress</span> -->
-                    <span class="complete">Complete (December 2<sup>nd</sup>, 2016)</span>
-                </td>
-            </tr>
-            <tr>
-                <td>A first-person VR game for the HTC Vive developed by the Georgia Tech VGDev club. I personally worked on the AI behavior for the game's enemies, along with assisting in level design and the game's tutorial.</td>
-            </tr>
-            <tr>
-                <td><a href="http://vgdev.gtorg.gatech.edu/game/bit-spike/">Take a Look -&gt</a></td>
-            </tr>
-        </table>
-    </div>
 
-    <hr />
-
-    <div class="project">
-        <table>
-            <tr>
-                <th>The Duck Site</th>
-            </tr>
-            <tr>
-                <td><a href="https://jhdeerin.github.io/The-Duck-Site/"><img src="images/project_duckSite.png" alt="The Duck Site"></a></td>
-            </tr>
-            <tr>
-                <td class="status">Status:
-                    <span class="complete">Complete (October 22<sup>nd</sup>, 2016)</span>
-                </td>
-            </tr>
-            <tr>
-                <td>A website I created in order to teach myself the essentials of HTML5/CSS3. Among other things, it contains a robust navigation bar, a variety of image styles, some custom CSS techniques and a very, very quirky sense of humor.</td>
-            </tr>
-            <tr>
-                <td><a href="https://jhdeerin.github.io/The-Duck-Site/">Take a Look -&gt</a></td>
-            </tr>
-        </table>
-    </div>
-
-    <hr />
-
-    <div class="project">
-        <table>
-            <tr>
-                <th>eMappd</th>
-            </tr>
-            <tr>
-                <td><a href="https://rzhade3.github.io/Georgia-Tech-Hackathon/"><img src="images/project_emappd.png" alt="The Duck Site"></a></td>
-            </tr>
-            <tr>
-                <td class="status">Status:
-                    <span class="complete">Complete (September 25<sup>th</sup>, 2016)</span>
-                </td>
-            </tr>
-            <tr>
-                <td>An IP-based geolocation service created for HackGT 2016, based on the Google Maps API. Given an IP address, it can identify the target's approximate location, along with providing a snazzy bonus picture of seagulls.</td>
-            </tr>
-            <tr>
-                <td><a href="https://rzhade3.github.io/Georgia-Tech-Hackathon/">Take a Look -&gt</a></td>
-            </tr>
-        </table>
-    </div>
-
-    <hr />
+    {% assign sorted_works = (site.sample_works | sort: 'date') | reverse %}
+    {% for sample_work in sorted_works %}
+        {% include sampleWork.html work=sample_work %}
+        <hr />
+    {% endfor %}
 
     <div class="project">
         <table>
@@ -110,25 +44,4 @@ googleFontUrl: 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300|Dro
 
     <p>...and <a href="https://github.com/JHDeerin">a bit more</a>. If you'd like to see more of my work (or would just like a peek behind the curtain), please feel free to check me out on GitHub.</p>
     <a href="https://github.com/JHDeerin"><img src="images/icon_github.png" alt="My GitHub profile"></a>
-
-    <!-- Template for a new Project
-    <div class="project">
-        <table>
-            <tr>
-                <th>[Project Name]</th>
-            </tr>
-            <tr>
-                <td><a href=""><img src="images/project_duckSite.png"></a></td>
-            </tr>
-            <tr>
-                <td>Status: Completed January 1<sup>st</sup>, 1970</td>
-            </tr>
-            <tr>
-                <td>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis sem dui, eget iaculis erat aliquet mollis. Suspendisse pharetra, sapien at pretium semper, dolor libero ornare leo, nec convallis quam odio vitae massa. Duis dignissim libero sit amet dictum vestibulum. Duis ipsum sapien, iaculis vitae metus quis, vulputate pellentesque nulla. Fusce aliquet, leo non blandit viverra, ante risus commodo velit, at aliquam nibh lorem at diam. Suspendisse hendrerit elit sit amet mauris maximus, vitae semper sem vulputate. Morbi scelerisque viverra massa. Ut id neque vitae nibh rhoncus efficitur a sit amet tortor. Morbi et leo libero. Mauris posuere luctus ligula, et maximus ipsum imperdiet at. Quisque lacinia eget augue non faucibus. Phasellus blandit mauris non ante congue pellentesque. Nulla vitae vehicula neque, vitae vulputate nibh. Donec elementum nisl et tellus fringilla tempus. Aliquam luctus dui mi, ac lacinia ligula ultricies in.</td>
-            </tr>
-            <tr>
-                <td><a href="">Take a Look</a></td>
-            </tr>
-        </table>
-    </div> -->
 </div>
