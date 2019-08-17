@@ -5,8 +5,6 @@ ul.nav{
     background-color: rgba(38, 33, 30, 0.9);
     width: 100%;
     min-width: 500px;
-    /*height: 5%;
-    min-height: 25px;*/
     height: 40px;
     position: fixed;
     top: 0;
@@ -57,6 +55,3 @@ li.navlink a#logo:hover {
 li.navlink a#logo:active {
     color: rgb(247, 165, 14);
 }
-/*li.navlink a#right-nav{
-    border-right: 2px solid rgb(255, 230, 204);
-}*/
