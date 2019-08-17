@@ -25,25 +25,10 @@ body {
     line-height: 50%;
 }
 
-/*#plank{
-    position: absolute;
-    width: 31.25%;
-    float: left;
-    bottom: 0;
-}
-.board{
-    width: 300%;
-    height: auto;
-}*/
-
 #jake {
     position: relative;
     float: left;
     margin: 50px 0px 0px 0px;
-    /*left: -400px;   if the plank image is used
-    max-height: 1016.494px;
-    max-width: 698.96px;
-    width: 72.8085%;*/
 
     width: 31.25%;
     z-index: 10;

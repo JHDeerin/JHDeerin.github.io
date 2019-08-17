@@ -1,0 +1,21 @@
+<div class="project">
+    <table>
+        <tr>
+            <th>{{ include.work.title }}</th>
+        </tr>
+        <tr>
+            <td><a href="{{ include.work.projectUrl }}"><img src="{{ include.work.imgUrl }}"></a></td>
+        </tr>
+        <tr>
+            <td class="status">
+                Status: <span class="complete">Complete ({{ include.work.date | date_to_long_string: 'ordinal', 'US' }})</span>
+            </td>
+        </tr>
+        <tr>
+            <td>{{ include.work.content | strip_html }}</td>
+        </tr>
+        <tr>
+            <td><a href="{{ include.work.projectUrl }}">Take a Look -&gt</a></td>
+        </tr>
+    </table>
+</div>
