@@ -1,11 +1,11 @@
 <template>
 <nav>
   <ul>
-    <li :class="{'selected': isSelected['Home']}"><a href="#home">Home</a></li>
-    <li :class="{'selected': isSelected['About Me']}"><a href="#about">About Me</a></li>
-    <li :class="{'selected': isSelected['Resume']}"><a href="#resume">Resume</a></li>
-    <li :class="{'selected': isSelected['Sample Works']}"><a href="#works">Sample Works</a></li>
-    <li :class="{'selected': isSelected['Contact Me']}"><a href="#contact">Contact Me</a></li>
+    <li :class="{'selected': isSelected['Home']}"><a href="#home" v-on:click="onClick">Home</a></li>
+    <li :class="{'selected': isSelected['About Me']}"><a href="#about" v-on:click="onClick">About Me</a></li>
+    <li :class="{'selected': isSelected['Resume']}"><a href="#resume" v-on:click="onClick">Resume</a></li>
+    <li :class="{'selected': isSelected['Sample Works']}"><a href="#works" v-on:click="onClick">Sample Works</a></li>
+    <li :class="{'selected': isSelected['Contact Me']}"><a href="#contact" v-on:click="onClick">Contact Me</a></li>
   </ul>
 </nav>
 </template>
@@ -31,6 +31,13 @@ export default {
   },
   beforeMount() {
     this.isSelected[this.selected] = true;
+  },
+  methods: {
+    onClick(event) {
+      this.isSelected[this.selected] = false;
+      this.selected = event.target.innerText;
+      this.isSelected[this.selected] = true;
+    }
   }
 }
 </script>
