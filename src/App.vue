@@ -1,28 +1,62 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<main id="main" class="parallax-container">
+  <navbar-menu selected="Home"></navbar-menu>
+
+  <home-page></home-page>
+
+  <about-page></about-page>
+
+  <resume-page></resume-page>
+
+  <works-page></works-page>
+
+  <contact-page></contact-page>
+</main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from './components/HomePage.vue'
+import AboutPage from './components/AboutPage.vue'
+import ResumePage from './components/ResumePage.vue'
+import WorksPage from './components/WorksPage.vue'
+import ContactPage from './components/ContactPage.vue'
+
+import NavbarMenu from './components/NavbarMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'home-page': HomePage,
+    'about-page': AboutPage,
+    'resume-page': ResumePage,
+    'works-page': WorksPage,
+    'contact-page': ContactPage,
+
+    'navbar-menu': NavbarMenu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url(./assets/clear_styles.css);
+@import url(./assets/styles.css);
+
+.subpage {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 1px 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+@media (max-width: 850px) {
+  #about .parallax-background {
+    height: 33%;
+  }
+
+  #resume .parallax-background {
+    height: 25%;
+  }
 }
 </style>

@@ -1,0 +1,126 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: white;
+    background: #0a171d;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-style: normal;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3fafef;
+}
+a:visited {
+    color: #3fafef;
+}
+a::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: #3fafef;
+    transition: 0.2s ease-out all;
+}
+a:hover::after,
+a.selected::after {
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.parallax-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    transform: translateZ(-1px) scale(2); /*scale = (persp-dist)/persp*/
+    z-index: -1;
+    box-shadow: inset 0 -6vw 3vw -3vw #0a171d; /* Fade out image bottom */
+}
+
+/* ========== Home Styles ==========*/
+.header-box {
+    font-size: 5.925vh; /*4em at 1080p*/
+    margin-left: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 2rem;
+}
+
+.main-article,
+.main-article-wide {
+    box-sizing: border-box;
+    margin-left: 20vw; /* To line up with 2nd navbar element*/
+    margin-top: 1rem;
+    margin-bottom: 5vh;
+    padding: 1rem;
+    max-width: 40rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border: 1px white solid;
+    background: rgba(0,0,0, 0.2);
+}
+.main-article p,
+.main-article-wide p {
+    margin-bottom: 1rem;
+}
+
+.main-article-wide {
+    width: 60vw;
+    max-width: 100%;
+}
+
+/* ========== Screen-size specific Styles ==========*/
+@media (min-width: 1920px) {
+    .main-article {
+        font-size: 1.0vw;
+        max-width: 40vw;
+    }
+    .main-article h2 {
+        font-size: 2.0vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-box {
+        font-size: 2em;
+    }
+
+    .main-article,
+    .main-article-wide,
+    .display-grid {
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
