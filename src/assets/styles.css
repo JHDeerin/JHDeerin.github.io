@@ -65,7 +65,6 @@ a.selected::after {
     box-shadow: inset 0 -6vw 3vw -3vw #0a171d; /* Fade out image bottom */
 }
 
-/* ========== Home Styles ==========*/
 .header-box {
     font-size: 5.925vh; /*4em at 1080p*/
     margin-left: 10vw;
@@ -103,10 +102,14 @@ h2 {
 /* ========== Screen-size specific Styles ==========*/
 @media (min-width: 1920px) {
     .main-article {
-        font-size: 1.0vw;
         max-width: 40vw;
     }
-    .main-article h2 {
+    .main-article,
+    .main-article-wide {
+        font-size: 1.0vw;
+    }
+    .main-article h2,
+    .main-article-wide h2 {
         font-size: 2.0vw;
     }
 }

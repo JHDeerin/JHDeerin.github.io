@@ -9,13 +9,13 @@
             title="2020 Website Redesign"
             description="This website didn't design itself, y'know."
             img-url="/assets/img/redesigned_website.jpg"
-            github-url="">
+            github-url="https://github.com/JHDeerin/JHDeerin.github.io">
         </sample-work-item>
         <sample-work-item
             title="NASA F' CLI"
             description="I created a command-line suite for NASA's F' project."
             img-url="/assets/img/tab_complete_commands_min.gif"
-            github-url="">
+            github-url="https://github.com/nasa/fprime">
         </sample-work-item>
         <sample-work-item
             title="N-Body Galaxy Simulation"
@@ -27,19 +27,19 @@
             title="Jake's CS Notes"
             description="A dynamic website for hosting my class notes from Georgia Tech."
             img-url="/assets/img/notes_page.png"
-            github-url="">
+            github-url="https://github.com/JHDeerin/notesPageTest">
         </sample-work-item>
         <sample-work-item
             title="MAC Tutoring Website"
             description="A Bits of Good 2018 project connecting underprivileged students with tutors."
             img-url="/assets/img/mac_tutoring.jpg"
-            github-url="">
+            github-url="https://github.com/GTBitsOfGood/midtown-assistance-center">
         </sample-work-item>
         <sample-work-item
             title="Bit.Spike"
             description="VGDev's first game built for virtual reality."
             img-url="/assets/img/project_bitspike.jpg"
-            github-url="">
+            github-url="https://vgdev.gtorg.gatech.edu/game/bit-spike">
         </sample-work-item>
     </article>
     <footer class="header-box">
