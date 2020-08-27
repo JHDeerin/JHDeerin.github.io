@@ -20,6 +20,7 @@ export default {
   },
   data() {
     return {
+      currentSelected: '',
       isSelected: {
         'Home': false,
         'About Me': false,
@@ -30,13 +31,14 @@ export default {
     };
   },
   beforeMount() {
-    this.isSelected[this.selected] = true;
+    this.currentSelected = this.selected
+    this.isSelected[this.currentSelected] = true;
   },
   methods: {
     onClick(event) {
-      this.isSelected[this.selected] = false;
-      this.selected = event.target.innerText;
-      this.isSelected[this.selected] = true;
+      this.isSelected[this.currentSelected] = false;
+      this.currentSelected = event.target.innerText;
+      this.isSelected[this.currentSelected] = true;
     }
   }
 }

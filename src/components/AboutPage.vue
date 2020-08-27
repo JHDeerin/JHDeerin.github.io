@@ -24,13 +24,23 @@
 
     <p>When not at his desk or helping out at the BCM, he can usually be found in a corner somewhere, curled up with a good book, a cup of tea, or, of course, his laptop. In the world of computer science, Jake is particularly interested in artificial intelligence, simulation and modeling, and human-computer interaction.</p>
 
-    <a href="contact.html"><strong>Get in touch</strong></a>
+    <p style="text-align: center">
+      <a href="#contact"><strong>Get in touch</strong></a>
+      <br>
+      <contact-icons></contact-icons>
+    </p>
   </article>
 </div>
 </template>
 
 <script>
-export default {}
+import ContactIcons from './ContactIcons'
+
+export default {
+  components: {
+    'contact-icons': ContactIcons
+  }
+}
 </script>
 
 <style scoped>

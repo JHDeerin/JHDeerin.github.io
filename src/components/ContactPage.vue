@@ -4,7 +4,7 @@
   <header id="contact-header" class="header-box">
     <h1>Let's have a talk</h1>
     <p>Have a question, concern, or just want to get in touch? No matter what, I'd love to hear from you.</p>
-    <contact-icons></contact-icons>
+    <contact-icons id="contact-page-icons"></contact-icons>
     <img src="/assets/img/jake_signature_white.png" alt="Jake Deerin">
   </header>
 </div>
@@ -19,6 +19,17 @@ export default {
   }
 }
 </script>
+
+<style>
+#contact-page-icons.contact-icons {
+  display: flex;
+}
+#contact-page-icons.contact-icons svg {
+  margin: 3.125vh;
+  width: 10vh;
+  height: 10vh;
+}
+</style>
 
 <style scoped>
 .parallax-background {
