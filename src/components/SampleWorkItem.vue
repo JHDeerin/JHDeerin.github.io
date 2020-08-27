@@ -44,6 +44,7 @@ export default {
   width: 100%;
   height: 100%;
   opacity: 0;
+  font-size: 1em;
   text-align: center;
   transition: 0.2s ease-out all;
   background: rgba(0,0,0, 0.5);
@@ -59,5 +60,11 @@ export default {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1920px) {
+  .work-caption {
+    font-size: 0.833vw;
+  }
 }
 </style>>

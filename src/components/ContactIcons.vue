@@ -17,8 +17,8 @@ export default {}
 }
 .contact-icons svg{
   margin: 0 0.3em;
-  width: 1em;
-  height: 1em;
+  width: 1.2em;
+  height: 1.2em;
 }
 </style>
 
