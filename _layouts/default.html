@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/analytics.js"></script>
+
+        <meta name="description" content ="{{ page.description }}">
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <link href="css/overallStyle.css" type="text/css" rel="stylesheet">
+        <link href="css/navStyle.css" type="text/css" rel="stylesheet">
+
+        <link href="css/{{ page.stylesheet }}" type="text/css" rel="stylesheet">
+        <link href="{{ page.googleFontUrl }}" rel="stylesheet">
+    </head>
+    <body>
+        {% include primaryNavigation.html %}
+        {{ content }}
+    </body>
+</html>

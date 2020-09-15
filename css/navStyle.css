@@ -1,0 +1,57 @@
+ul.nav{
+    margin: 0px auto 500px auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(38, 33, 30, 0.9);
+    width: 100%;
+    min-width: 500px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    text-align: left;
+    vertical-align: middle;
+    z-index: 99;
+}
+li.navlink {
+    display: inline;
+    overflow: visible;
+}
+li.navlink a {
+    height: 100%;
+    position: relative;
+    bottom: -10px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+
+    text-decoration: none;
+    color: rgb(255, 230, 204);
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    font-size: 18px;
+}
+li.navlink a:hover {
+    color: rgb(179, 54, 125);
+}
+li.navlink a:active {
+    color: rgb(247, 165, 14);
+}
+li.navlink a#currentPage {
+    background-color: rgb(0, 0, 0);
+}
+li.navlink a#logo {
+    float: right;
+
+    position: relative;
+    bottom: 10px;
+    margin: 5px 0px;
+
+    color: rgb(64, 64, 64);
+}
+li.navlink a#logo:hover {
+    color: rgb(179, 54, 125);
+}
+li.navlink a#logo:active {
+    color: rgb(247, 165, 14);
+}

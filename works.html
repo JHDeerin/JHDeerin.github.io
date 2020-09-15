@@ -1,0 +1,47 @@
+---
+layout: 'default'
+title: 'Sample Works'
+description: 'Some featured works from the personal and business website of Joseph &#34Jake&#34 H. Deerin'
+stylesheet: 'works.css'
+googleFontUrl: 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300|Droid+Sans:300'
+---
+<div class="header">
+    <h1>I've Done A Few Things</h1>
+</div>
+<div class="works">
+    <p>Here are just a few of the more recent things I've been up to:</p>
+    <hr />
+
+    {% assign sorted_works = (site.sample_works | sort: 'date') | reverse %}
+    {% for sample_work in sorted_works %}
+        {% include sampleWork.html work=sample_work %}
+        <hr />
+    {% endfor %}
+
+    <div class="project">
+        <table>
+            <tr>
+                <th>Circles</th>
+            </tr>
+            <tr>
+                <td><iframe src="simpleCircles/circles.html" width="500" height="500" scrolling="no" style="border: solid 2px rgb(255, 230, 204);"></iframe></td>
+            </tr>
+            <tr>
+                <td class="status">Status:
+                    <span class="complete">Running Right Now!</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Look! Bubbles! What more do you need to know? Try clicking within the frame; there's hours of fun to be had right there!</td>
+            </tr>
+            <tr>
+                <td><a href="https://rzhade3.github.io/Georgia-Tech-Hackathon/">Take a Look -&gt</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr />
+
+    <p>...and <a href="https://github.com/JHDeerin">a bit more</a>. If you'd like to see more of my work (or would just like a peek behind the curtain), please feel free to check me out on GitHub.</p>
+    <a href="https://github.com/JHDeerin"><img src="images/icon_github.png" alt="My GitHub profile"></a>
+</div>

@@ -1,0 +1,82 @@
+body {
+    background-image: url("../images/works_background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    bottom: -50px;
+    left: 10px;
+    margin: 0px auto;
+
+    font-family: 'Droid Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 3em;
+}
+.header h1 {
+    font-size: 375%;
+}
+
+.works {
+    position: relative;
+    bottom: -50px;
+    width: 800px;
+    height: auto;
+    margin: 0px auto 10px auto;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 2px rgb(255, 230, 204);
+}
+.works hr{
+    border: 0;
+    margin: 5px auto;
+    height: 2px;
+    width: 90%;
+    background-image: linear-gradient(to right, rgba(50, 50, 50, 0.1), rgba(255, 230, 204, 1),rgba(50, 50, 50, 0.1));
+}
+
+.project {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0px auto;
+
+    text-align: center;
+}
+.project th{
+    font-family: 'Droid Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 2em;
+
+    font-size: 2em;
+    text-decoration: underline;
+}
+.project td{
+    text-align: center;
+}
+.status{
+    border-bottom: solid 1px rgb(255, 230, 204);
+}
+.complete {
+    color: rgb(75, 183, 77);/*rgb(1, 186, 7);*/
+}
+.inprogress {
+    color: rgb(116, 165, 165);
+}
+.project img{
+    border: solid 2px rgb(255, 230, 204);
+}
+
+.iframe {
+    overflow: hidden;
+}
