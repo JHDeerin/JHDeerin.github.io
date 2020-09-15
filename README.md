@@ -1,7 +1,7 @@
 # JHDeerin.github.io
 
-A draft of my [personal website](https://jhdeerin.github.io), written in 
-HTML/CSS and built using Jekyll. Feel free to check it out at your leisure!
+A draft of my [personal website](https://jhdeerin.github.io), written in
+HTML/CSS/Vue.js. Feel free to check it out at your leisure!
 
 ## Contributing
 
