@@ -15,7 +15,7 @@ export default {}
 
 <style scoped>
 .parallax-background {
-  background: url(/assets/img/homePhoto.webp) no-repeat scroll center center/cover;
+  background: url(/assets/img/homePhoto.jpg) no-repeat scroll center center/cover;
 }
 
 .header-box {

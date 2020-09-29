@@ -106,6 +106,6 @@ export default {
 
 <style scoped>
 .parallax-background {
-  background: url(/assets/img/resumePhoto.webp) no-repeat scroll right top/cover;
+  background: url(/assets/img/resumePhoto.jpg) no-repeat scroll right top/cover;
 }
 </style>

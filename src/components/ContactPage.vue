@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .parallax-background {
-  background: url(/assets/img/contactPhoto.webp) no-repeat scroll center center/cover;
+  background: url(/assets/img/contactPhoto.jpg) no-repeat scroll center center/cover;
   height: 100%;
 }
 
