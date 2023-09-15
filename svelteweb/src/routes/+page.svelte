@@ -1,8 +1,10 @@
 <script>
 	import HomePage from './HomePage.svelte';
+	import NavbarMenu from './NavbarMenu.svelte';
 </script>
 
 <main id="main" class="parallax-container">
+	<NavbarMenu selected="Home" />
 	<HomePage />
 </main>
 
