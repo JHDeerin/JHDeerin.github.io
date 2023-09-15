@@ -1,11 +1,13 @@
 <script>
 	import HomePage from './HomePage.svelte';
 	import NavbarMenu from './NavbarMenu.svelte';
+	import AboutPage from './AboutPage.svelte';
 </script>
 
 <main id="main" class="parallax-container">
 	<NavbarMenu selected="Home" />
 	<HomePage />
+	<AboutPage />
 </main>
 
 <style>
@@ -19,10 +21,6 @@
 	}
 
 	@media (max-width: 850px) {
-		#about .parallax-background {
-			height: 33%;
-		}
-
 		#resume .parallax-background {
 			height: 25%;
 		}
