@@ -1,4 +1,8 @@
-<span class="contact-icons">
+<script lang="ts">
+	export const id: string = 'contact-page-icons';
+</script>
+
+<span {id} class="contact-icons">
 	<a href="https://www.linkedin.com/in/jhdeerin/"
 		><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 			><path

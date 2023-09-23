@@ -3,6 +3,7 @@
 	import NavbarMenu from './NavbarMenu.svelte';
 	import AboutPage from './AboutPage.svelte';
 	import ResumePage from './ResumePage.svelte';
+	import ContactPage from './ContactPage.svelte';
 </script>
 
 <main id="main" class="parallax-container">
@@ -10,6 +11,7 @@
 	<HomePage />
 	<AboutPage />
 	<ResumePage />
+	<ContactPage />
 </main>
 
 <style>
