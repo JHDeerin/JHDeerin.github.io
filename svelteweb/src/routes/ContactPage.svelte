@@ -11,21 +11,12 @@
 			Have a question, concern, or just want to get in touch? No matter what, I'd love to hear from
 			you.
 		</p>
-		<ContactIcons id="contact-page-icons" />
+		<ContactIcons class="contact-icons" />
 		<img src="/assets/img/jake_signature_white.png" alt="Jake Deerin" />
 	</header>
 </div>
 
 <style>
-	#contact-page-icons.contact-icons {
-		display: flex;
-	}
-	#contact-page-icons.contact-icons svg {
-		margin: 3.125vh;
-		width: 10vh;
-		height: 10vh;
-	}
-
 	.parallax-background {
 		background: url(/assets/img/contactPhoto.jpg) no-repeat scroll center center/cover;
 		height: 100%;
@@ -48,6 +39,14 @@
 	}
 	#contact-header img {
 		width: 60%;
+	}
+	#contact-header :global(.contact-icons) {
+		display: flex;
+	}
+	#contact-header :global(.contact-icons svg) {
+		margin: 3.125vh;
+		width: 10vh;
+		height: 10vh;
 	}
 
 	@media (max-width: 850px) {

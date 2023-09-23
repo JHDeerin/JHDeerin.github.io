@@ -3,6 +3,7 @@
 	import NavbarMenu from './NavbarMenu.svelte';
 	import AboutPage from './AboutPage.svelte';
 	import ResumePage from './ResumePage.svelte';
+	import WorksPage from './WorksPage.svelte';
 	import ContactPage from './ContactPage.svelte';
 </script>
 
@@ -11,6 +12,7 @@
 	<HomePage />
 	<AboutPage />
 	<ResumePage />
+	<WorksPage />
 	<ContactPage />
 </main>
 
