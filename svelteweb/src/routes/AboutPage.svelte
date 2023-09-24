@@ -3,8 +3,7 @@
 </script>
 
 <div id="about" class="subpage">
-	<!-- TODO: Lazily load background image! -->
-	<div class="parallax-background" />
+	<div class="lozad" data-toggle-class="parallax-background" />
 	<div class="header-box">
 		<header>
 			<h1>A bit about me</h1>
@@ -87,12 +86,12 @@
 </div>
 
 <style>
-	.parallax-background {
+	#about :global(.parallax-background) {
 		background: url(/assets/img/aboutPhoto.jpg) no-repeat scroll right top/cover;
 	}
 
 	@media (max-width: 850px) {
-		#about .parallax-background {
+		#about :global(.parallax-background) {
 			height: 33%;
 		}
 	}

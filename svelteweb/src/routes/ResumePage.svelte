@@ -4,8 +4,7 @@
 </script>
 
 <div id="resume" class="subpage">
-	<!-- TODO: Lazily load background image! -->
-	<div class="parallax-background" />
+	<div class="lozad" data-toggle-class="parallax-background" />
 	<header class="header-box">
 		<h1>I'll just leave this here</h1>
 	</header>
@@ -114,12 +113,12 @@
 </div>
 
 <style>
-	.parallax-background {
+	#resume :global(.parallax-background) {
 		background: url(/assets/img/resumePhoto.jpg) no-repeat scroll right top/cover;
 	}
 
 	@media (max-width: 850px) {
-		#resume .parallax-background {
+		#resume :global(.parallax-background) {
 			height: 25%;
 		}
 	}

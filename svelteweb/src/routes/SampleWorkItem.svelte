@@ -6,7 +6,11 @@
 </script>
 
 <!-- TODO: Lazily load background image! -->
-<div class="sample-work-item" style="--background-image: url({imgUrl})">
+<div
+	class="sample-work-item lozad"
+	style="--background-image: url({imgUrl})"
+	data-toggle-class="work-item-background"
+>
 	<div class="work-caption">
 		<p><b>{title}</b></p>
 		<p>{description}</p>
@@ -20,7 +24,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		/*position: absolute;*/
 		top: 0;
 		left: 0;
 		overflow: hidden;
@@ -39,12 +42,16 @@
 		margin: 0.5em;
 	}
 
-	.sample-work-item {
-		aspect-ratio: 1/1;
+	/*TODO: Avoid the global for this w/ the dynamic classes?*/
+	:global(.work-item-background) {
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-image: var(--background-image);
+	}
+
+	.sample-work-item {
+		aspect-ratio: 1/1;
 	}
 
 	@media (min-width: 1920px) {

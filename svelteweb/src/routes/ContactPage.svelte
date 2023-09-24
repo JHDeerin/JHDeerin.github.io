@@ -4,7 +4,7 @@
 
 <div id="contact" class="subpage">
 	<!-- TODO: Lazily load background image! -->
-	<div class="parallax-background" />
+	<div class="lozad" data-toggle-class="parallax-background" />
 	<header id="contact-header" class="header-box">
 		<h1>Let's have a talk</h1>
 		<p>
@@ -17,7 +17,7 @@
 </div>
 
 <style>
-	.parallax-background {
+	#contact :global(.parallax-background) {
 		background: url(/assets/img/contactPhoto.jpg) no-repeat scroll center center/cover;
 		height: 100%;
 	}
