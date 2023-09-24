@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import SampleWorkItem from './SampleWorkItem.svelte';
 
+	// ALL of this code is to draw the network-looking particle effect
+	// background using a canvas
 	onMount(() => {
 		const canvas = document.getElementById('background-canvas');
 		canvas.width = canvas.clientWidth;
