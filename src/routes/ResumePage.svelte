@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import ResumeSection from './ResumeSection.svelte';
 	import ResumeExperienceItem from './ResumeExperienceItem.svelte';
 </script>
@@ -9,7 +10,7 @@
 		<h1>I'll just leave this here</h1>
 	</header>
 	<article class="main-article-wide">
-		<p><a href="/assets/JHDeerin_Resume_Web.pdf" target="_blank">Download my one-page resume</a></p>
+		<p><a href="{base}/assets/JHDeerin_Resume_Web.pdf" target="_blank">Download my one-page resume</a></p>
 
 		<ResumeSection title="Education">
 			<a href="https://www.gatech.edu"><b>Georgia Institute of Technology</b></a>, Atlanta, GA

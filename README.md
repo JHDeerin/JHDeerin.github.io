@@ -23,7 +23,7 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-Deploy the build by moving the output `dist` directory to the `gh-pages` branch.
+Deploy the build by moving the output `build` directory to the `gh-pages` branch.
 
 ## Contributing
 Noticed an issue on my website (grammatical, programmatical, or mineral)? Have a neat idea that you've kindly decided to share with me? That's great! Please open a new issue with your concerns and I'll do my utmost to address them as soon as possible.

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import ContactIcons from './ContactIcons.svelte';
 </script>
 
@@ -12,7 +13,7 @@
 			you.
 		</p>
 		<ContactIcons class="contact-icons" />
-		<img src="/assets/img/jake_signature_white.png" alt="Jake Deerin" />
+		<img src="{base}/assets/img/jake_signature_white.png" alt="Jake Deerin" />
 	</header>
 </div>
 
