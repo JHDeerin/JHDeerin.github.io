@@ -14,7 +14,7 @@
 		<ResumeSection title="Education">
 			<a href="https://www.gatech.edu"><b>Georgia Institute of Technology</b></a>, Atlanta, GA
 			<ul>
-				<li>August 2016 - December 2020 (Expected)</li>
+				<li>August 2016 - December 2020</li>
 				<li>B.S. Computer Science, Minor in Philosophy of Science</li>
 				<li>GPA: 4.0/4.0</li>
 			</ul>

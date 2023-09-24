@@ -38,7 +38,7 @@
 			before flopping hard at States - only to become the 2016 Debating Technology Issues State Champion,
 			establishing both the depth of his acumen and his utter lack of a social life. He concurrently
 			cemented his status as the school's ultra-nerd by serving as captain of the
-			<a href="http://mtquizbowl.net/About_Us.html">Quiz Bowl team</a>
+			<a href="https://www.naqt.com/about/quiz-bowl.html">Quiz Bowl team</a>
 			throughout his Junior and Senior years, having the honor of leading them to a
 			<a href="https://www.naqt.com/stats/team-performance.jsp?team_id=93205&playoffs=true"
 				>13<sup>th</sup>-place finish</a
@@ -56,25 +56,23 @@
 		</p>
 
 		<p>
-			Jake is currently pursuing a Bachelor's Degree in Computer Science at the <a
+			In 2020, Jake completed a Bachelor's Degree in Computer Science at the <a
 				href="http://www.gatech.edu">Georgia Institute of Technology</a
-			>
-			in Atlanta, Georgia, where he's been involved with the
+			>, where he was involved with the
 			<a href="https://www.gtbcm.com">Baptist Collegiate Ministry</a>,
 			<a href="https://bitsofgood.org">Bits of Good software</a>,
 			<a href="http://www.vgdev.org">VGDev Game Development club</a>
 			and the <a href="http://quizbowl.gtorg.gatech.edu">Georgia Tech Academic Team</a>. Between
-			semesters, Jake has worked at such varied places as
+			semesters, Jake worked at
 			<a href="https://www.jpl.nasa.gov">NASA</a>, the
 			<a href="https://gtri.gatech.edu">Georgia Tech Research Institute</a>, and
 			<a href="https://www.1234micro.com">12:34 MicroTechnologies</a>.
 		</p>
 
 		<p>
-			When not at his desk or helping out at the BCM, he can usually be found in a corner somewhere,
-			curled up with a good book, a cup of tea, or, of course, his laptop. In the world of computer
-			science, Jake is particularly interested in artificial intelligence, simulation and modeling,
-			and human-computer interaction.
+			He remains at large, and currently tries to teach old cash registers new tricks at <a
+				href="https://www.ncr.com/">NCR</a
+			>.
 		</p>
 
 		<p style="text-align: center">
