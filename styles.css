@@ -31,6 +31,9 @@ h1 {
     line-height: 1.25;
     margin: 0.25rem;
 }
+h2 {
+    line-height: 1.25;
+}
 main {
     margin: 0 auto;
     max-width: var(--width-wide);
