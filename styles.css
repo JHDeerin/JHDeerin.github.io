@@ -37,6 +37,10 @@ main {
     width: var(--width-normal);
 }
 
+img {
+    width: 100%;
+}
+
 @media (max-width: 860px) {
     :root {
         --width-normal: 88vw;
