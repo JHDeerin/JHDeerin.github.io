@@ -3,29 +3,34 @@
     --flexoki-paper:           #FFFCF0;
     --flexoki-blue-400:        #4385BE;
     --flexoki-purple-400:      #8B7EC8;
+    --flexoki-600:             #6F6E69;
     --main-text-color: var(--flexoki-black);
-    --main-link-color: var(--flexoki-blue-400);
-    --main-link-visited-color: var(--flexoki-purple-400);
+    --link-color: var(--flexoki-blue-400);
+    --link-visited-color: var(--flexoki-purple-400);
+    --muted-text-color: var(--flexoki-600);
     --main-bg-color: var(--flexoki-paper);
-    --main-font-size: calc(1.5rem + 0.25vw);
+    --main-font-size: calc(1rem + 0.25vw);
     --main-line-height: 1.5;
     --main-font: sans-serif;
     --width-normal: 35em;
-    --width-wide: 55em
+    --width-wide: 55em;
 }
 body {
+    margin: 0;
     margin-top: 2vw;
     padding: 2rem 0 0;
+    width: 100%;
     font-family: var(--main-font);
     font-size: var(--main-font-size);
     line-height: var(--main-line-height);
     color: var(--main-text-color);
+    background-color: var(--main-bg-color);
 }
 a {
-    color: var(--main-link-color);
+    color: var(--link-color);
 }
 a:visited {
-    color: var(--main-link-visited-color);
+    color: var(--link-visited-color);
 }
 h1 {
     line-height: 1.25;
@@ -46,6 +51,7 @@ img {
 
 @media (max-width: 860px) {
     :root {
+        --main-font-size: calc(1.2rem + 0.25vw);
         --width-normal: 88vw;
         --width-wide: 100vw;
         --input-width: 100%;
