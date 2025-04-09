@@ -1,9 +1,15 @@
 :root {
     --flexoki-black:           #100F0F;
     --flexoki-paper:           #FFFCF0;
+    --flexoki-600:             #6F6E69;
+    --flexoki-red-400:         #D14D41;
+    --flexoki-orange-400:      #DA702C;
+    --flexoki-yellow-400:      #D0A215;
+    --flexoki-green-400:       #879A39;
+    --flexoki-cyan-400:        #3AA99F;
     --flexoki-blue-400:        #4385BE;
     --flexoki-purple-400:      #8B7EC8;
-    --flexoki-600:             #6F6E69;
+    --flexoki-magenta-400:     #CE5D97;
     --main-text-color: var(--flexoki-black);
     --link-color: var(--flexoki-blue-400);
     --link-visited-color: var(--flexoki-purple-400);
