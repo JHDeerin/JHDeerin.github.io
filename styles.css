@@ -58,3 +58,7 @@ img {
         --heading-weight: 600;
     }
 }
+
+.scroll-end-stopper {
+    padding-bottom: 20vh;
+}
