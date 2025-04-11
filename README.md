@@ -11,7 +11,7 @@ npm install -g http-server  # install a web server
 http-server # start the server; open one of the links it gives in your browser
 ```
 
-Deploy the site by pushing changes to the `master` branch on GitHub.
+Deploy the site by pushing changes to the `main` branch on GitHub.
 
 ## Contributing
 
