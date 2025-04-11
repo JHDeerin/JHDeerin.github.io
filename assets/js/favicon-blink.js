@@ -1,22 +1,5 @@
-function getRelativePathToRoot() {
-  // Get the current path, which will be something like "/path/to/current/page.html"
-  let currentPath = window.location.pathname;
-  // if running on my local filesystem, replace to match the browser format
-  currentPath = currentPath.replace("/C:/Users/2016d/Documents/Projects/github/website-redesign-2025", "");
-  // Split by "/" and remove the filename (last element)
-  const pathParts = currentPath.split('/').filter(Boolean);
-  // Remove the last part if it contains a file extension (likely the HTML file)
-  const dirParts = pathParts.slice(0, pathParts[pathParts.length - 1]?.includes('.') ? -1 : undefined);
-  // Create a relative path with the appropriate number of "../" segments
-  return dirParts.length ? '../'.repeat(dirParts.length) : './';
-}
-
-function setFavicon(href) {
-  document.getElementById("favicon").href = href;
-}
-
 const openTime = 3000;
-const rootPath = getRelativePathToRoot();
+const rootPath = "/";
 
 let openEyesImgData = null;
 let closedEyesImgData = null;
@@ -36,6 +19,10 @@ function loadImageAsDataURL(url) {
         reader.readAsDataURL(blob);
       });
     });
+}
+
+function setFavicon(href) {
+  document.getElementById("favicon").href = href;
 }
 
 function swapFavicon(state) {
