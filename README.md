@@ -1,31 +1,20 @@
 # JHDeerin.github.io
 
-My personal website, written with SvelteKit and hosted on GitHub Pages. Check it out! https://jhdeerin.github.io/
+My personal website, hosted on GitHub Pages. Check it out! https://jhdeerin.github.io
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install`, start a development server:
+You'll need to run the site locally on a web server (due to my liberal use of absolute paths) - sorry. But that shouldn't be too hard:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install -g http-server  # install a web server
+http-server # start the server; open one of the links it gives in your browser
 ```
 
-## Building
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-Deploy the build by moving the output `build` directory to the `gh-pages` branch.
+Deploy the site by pushing changes to the `master` branch on GitHub.
 
 ## Contributing
+
 Noticed an issue on my website (grammatical, programmatical, or mineral)? Have a neat idea that you've kindly decided to share with me? That's great! Please open a new issue with your concerns and I'll do my utmost to address them as soon as possible.
 
 And of course, if you've taken the time to do this: thank you!
