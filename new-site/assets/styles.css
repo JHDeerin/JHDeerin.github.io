@@ -1,0 +1,70 @@
+:root {
+    --flexoki-black:           #100F0F;
+    --flexoki-paper:           #FFFCF0;
+    --flexoki-600:             #6F6E69;
+    --flexoki-red-400:         #D14D41;
+    --flexoki-orange-400:      #DA702C;
+    --flexoki-yellow-400:      #D0A215;
+    --flexoki-green-400:       #879A39;
+    --flexoki-cyan-400:        #3AA99F;
+    --flexoki-blue-400:        #4385BE;
+    --flexoki-purple-400:      #8B7EC8;
+    --flexoki-magenta-400:     #CE5D97;
+    --main-text-color: var(--flexoki-black);
+    --link-color: var(--flexoki-blue-400);
+    --link-visited-color: var(--flexoki-purple-400);
+    --muted-text-color: var(--flexoki-600);
+    --main-bg-color: var(--flexoki-paper);
+    --main-font-size: calc(1rem + 0.25vw);
+    --main-line-height: 1.5;
+    --main-font: sans-serif;
+    --width-normal: 35em;
+    --width-wide: 55em;
+}
+body {
+    margin: 0;
+    margin-top: 2vw;
+    padding: 2rem 0 0;
+    width: 100%;
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+a {
+    color: var(--link-color);
+}
+a:visited {
+    color: var(--link-visited-color);
+}
+h1 {
+    line-height: 1.25;
+    margin: 0.25rem;
+}
+h2 {
+    line-height: 1.25;
+}
+main {
+    margin: 0 auto;
+    max-width: var(--width-wide);
+    width: var(--width-normal);
+}
+
+img {
+    width: 100%;
+}
+
+@media (max-width: 860px) {
+    :root {
+        --main-font-size: calc(1.2rem + 0.25vw);
+        --width-normal: 88vw;
+        --width-wide: 100vw;
+        --input-width: 100%;
+        --heading-weight: 600;
+    }
+}
+
+.scroll-end-stopper {
+    padding-bottom: 20vh;
+}
