@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content="normal">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel=alternate title="Thoughts" type=application/atom+xml href="/thoughts/feed.xml">
+<link id="favicon" rel="icon" href="" />
+<script src="/assets/js/favicon-blink.js" defer></script>
+<title>RSS is not RSS - Jake Deerin</title>
+</head>
+
+<body>
+<main class="scroll-end-stopper">
+<h1><a href="/thoughts">← Thoughts</a></h1>
+
+<h2>RSS is not RSS</h2>
+
+<p>Today I learned that some RSS feeds are not actually RSS feeds - they're <a href="https://datatracker.ietf.org/doc/html/rfc4287">Atoms</a>, or even something stranger. I shouldn't be surprised at being surprised - I knew almost nothing about RSS feeds, after all - but I am.</p>
+<p>For reference, RSS stands for "Really Simple Syndication," and is a way to let people subscribe to your website/podcast/etc. for updates. It's the little orange radio icon you might've seen somewhere: <img style="width: var(--main-font-size)" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Generic_Feed-icon.svg" alt="RSS logo">. There's an <a href="https://www.rssboard.org/rss-specification">official RSS spec</a> and everything.</p>
+<p>When a website has a way to subscribe to updates in a non-email, non-"follow us on social media" way, I've always seen the link called "RSS" or "RSS feed." Apps that help you subscribe to such links are called "RSS readers." <a href="https://jvns.ca/">Blogs</a> <a href="https://www.benkuhn.net/">I</a> <a href="https://danluu.com/">read</a> by technical authors all have a link just called "RSS." I've never seen them called anything else.</p>
+<p>So, naturally, I assumed all of the above were the same thing. There's 1 standard protocol called RSS, and everyone uses it for this stuff. Got it.</p>
+<p>But it seems much like Kleenex, Band-Aid, and <a href="https://www.bbc.com/news/business-27026704">apparently heroin</a>, RSS has become a generic term for any subscriptions of this kind, and it's not the only protocol in town. While figuring out how to make my own feed, I read <a href="https://kevincox.ca/2022/05/06/rss-feed-best-practices/">Kevin Cox's RSS post</a>, where he pointed out at least 3 alternate formats and actually recommended Atom as superior. I decided to check out some other blogs I respect to see what they use - and to my surprise, all 3 of the blogs I linked to before use Atom. Despite calling their feeds RSS!</p>
+<p>From a brief survey, RSS is still the most popular format by far - it was on <a href="https://discuss.httparchive.org/t/what-is-the-most-popular-feed-format-rss-atom-or-json/2577/2">6x to 8x more websites than Atom</a> back in 2023, and <a href="https://podcasters.apple.com/4115-technical-updates-for-hosting-providers">Apple Podcasts discontinued Atom support</a> the same year - so it makes abundant sense why RSS is the de facto term for these feeds. It would be confusing to call them something else. No one calls dry ice "deposited carbon dioxide," however technically correct that might be.</p>
+<p>For that reason, I've decided to still call my own feed "RSS" despite going with Atom (I slightly prefer it, and it seems supported enough) - but it's a good reminder that things we only know casually can surprise us.</p>
+
+</main>
+</body>
+
+</html>
