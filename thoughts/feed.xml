@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Kevin Cox had a post on "RSS" feeds that I found very helpful: https://kevincox.ca/2022/05/06/rss-feed-best-practices/ -->
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Jake Deerin&#39;s Thoughts</title>
     <id>https://jhdeerin.github.io/</id>
