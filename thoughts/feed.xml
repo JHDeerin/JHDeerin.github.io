@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Jake Deerin&#39;s Thoughts</title>
+    <id>https://jhdeerin.github.io/</id>
+    <link href="https://jhdeerin.github.io/" rel="alternate" />
+    <link href="https://jhdeerin.github.io/thoughts/feed.xml" rel="self" />
+    <updated>2025-04-08T00:00:00Z</updated>
+    <author>
+        <name>Jake Deerin</name>
+    </author>
+    <entry>
+        <title>Yet Another Website Redesign</title>
+        <link href="https://jhdeerin.github.io/thoughts/0_website-redesign-2025" rel="alternate"/>
+        <id>https://jhdeerin.github.io/thoughts/0_website-redesign-2025</id>
+        <updated>2025-04-08T00:00:00Z</updated>
+        <summary>After about 5-ish years, I decided to redesign my website - again.</summary>
+    </entry>
+</feed>
