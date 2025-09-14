@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content="normal">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel=alternate title="Thoughts" type=application/atom+xml href="/thoughts/feed.xml">
+<link id="favicon" rel="icon" href="" />
+<script src="/assets/js/favicon-blink.js" defer></script>
+<title>Don't Say Things That Aren't True - Jake Deerin</title>
+</head>
+
+<body>
+<main class="scroll-end-stopper">
+<h1><a href="/thoughts">← Thoughts</a></h1>
+
+<h2>Don't Say Things That Aren't True</h2>
+
+<p>Ideally we would all say the truth, the whole truth, and nothing but the truth. Alas, I am stupid, and sometimes don't know what the truth is.</p>
+
+<p>I'm not talking about lying here (although yes, please don't lie). Instead, I'm talking about something less evil that wastes my time as a developer: people unintentionally saying things that are not true. Being overconfident. Jumping to conclusions. Things like:
+    <ul>
+        <li>"The load balancer's having errors, nothing's reaching our server" - when actually this dev was querying the wrong application's logs, and it was our server's fault after all</li>
+        <li>A manager telling the sales team that yes, that feature <em>was</em> completed last year, you can promise that customer a demo - when the feature was <em>absolutely not finished yet</em>, and had only been discussed with a few mock-up screenshots</li>
+        <li>"Hey, your app is broken, I'm seeing a ton of errors it's printing, we need to talk and fix this" - and then when we get on the call, it turns out the customer was trying to run this web app on a machine not connected to the internet</li>
+    </ul>
+</p>
+
+<p>Vague messages are their own can of worms, and can be equally frustrating - those "hey, your thing isn't working, please fix it" support tickets with no other information. But in those cases, at least I know we don't know anything, and that we'll need to do some detective work. But in the false information case, I am going to assume someone has already done their homework and skip those steps, and start working on something right away - the wrong thing. Detective work is often slow, but sometimes necessary; but work on the wrong thing will always be wasted.</p>
+
+<p>(TODO: Maybe classify the different kinds of "unintentional untruths" that can happen - the above 3 examples (except for maybe #2) are all of the "jumping to conclusions" type, of the person speaking having the facts before them but drawing a wrong conclusion from it - the "sound, but invalid" logical deduction. Closely related is the "valid, but unsound" case, where they have an incorrect fact in their head that got in there somehow, and then use otherwise-valid logic to come to a wrong conclusion based on bad information. Then there's a different class of "bad communication" untruths, where the original person actually doesn't believe anything incorrect, but does a poor job explaining to someone else, and that causes the other person to believe something wrong. Examples include the "overstating your confidence" problem (saying "this thing happened" instead of "I saw X, so I think this thing probably happened") or just sheer sloppiness with words (e.g. saying "the server is down" when what they really meant to say is "the server is still running, but is generating errors"). There are probably other ways of telling untruths unintentionally that I need to think of.)</p>
+
+<p>Ideally, you should tell the truth. But if you can't do that, at least do this: <strong>don't say things that are not true.</strong> It's okay to say "I don't know" if you're honestly not sure.</p>
+
+<p>The trouble is, of course, these are unintentional falsehoods - by definition they're hard to notice, "unknown unknowns" and "you don't know what you don't know"s. How can you possibly avoid them? You can't - not completely. You will make mistakes, have misunderstandings, simply know things that just ain't so. But I don't think it's entirely hopeless; I think you can improve and get better over time at throwing less untruths into the void. Here are some things I do, personally, that I think are helpful:
+    <ul>
+        <li>Before you say anything, ask yourself: "Is this true? Do I KNOW this is true? How do I know it's true?" This basic double-check will sometimes save you from being overconfident and jumping to conclusions, stating things like "I <em>know</em> it's team X's microservice, that's the 3rd time it's down this week" when actually all you've seen is one 500 HTTP error code that could have a dozen different causes.
+            <ul><li>This level of paranoia can get exhausting, so do basic triage here - the more important and permanent what you're saying is, the more you should ask this question. Hold lunch banter over football to a different standard than financial reports to your CEO.</li></ul>
+        </li>
+        <li>Share what you see, not just what you think. Instead of saying "Team X's microservice is down again", say "Team X's microservice is down again - I'm seeing a 500 error in /somelink/logs." This is <em>way</em> better to me; by sharing more of the story, even with a false conclusion, you let people know why you think something is happening, and that gives them a chance to sanity-check what you're saying. Separate facts from conclusions (knowing that sometimes you can get both wrong).
+            <ul><li>There is a danger here of getting too wordy with details, and overwhelming people; when in doubt, just add 1 sentence explaining why you think something is true ("I think X, because Y").</li></ul>
+        </li>
+        <li>Practice being careful with the truth in everyday life; make a habit of it. Easy to say, hard to do. But it's easy to get sloppy with details if you have a habit of "not letting the truth get in the way of a good story."</li>
+        <li>Don't be afraid to say "I don't know." Or better yet, "I don't know; give me a minute to check." Or "I'm not sure, but my best guess is…" - if you're not sure, let people know that somehow. This can be frustrating in the moment, but is ultimately better than leading someone astray, and long-term builds trust that you're not careless.</li>
+    </ul>
+</p>
+
+</main>
+</body>
+
+</html>
