@@ -15,6 +15,6 @@ Deploy the site by pushing changes to the `main` branch on GitHub.
 
 ## Contributing
 
-Noticed an issue on my website (grammatical, programmatical, or mineral)? Have a neat idea that you've kindly decided to share with me? That's great! Please open a new issue with your concerns and I'll do my utmost to address them as soon as possible.
+Noticed an issue on my website (grammatical, programmatical, or otherwise)? Have a neat idea that you've kindly decided to share with me? That's great! Please [open a new issue](https://github.com/JHDeerin/JHDeerin.github.io/issues/new) with your concerns and I'll do my utmost to address them as soon as possible.
 
 And of course, if you've taken the time to do this: thank you!
